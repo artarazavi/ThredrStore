@@ -1,0 +1,82 @@
+.cards {
+  height: 300px;
+  width: 320px;
+  background-color: #ffd6da;
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  position: relative;
+}
+.bottom-left {
+  font-weight: bold;
+  position: absolute;
+  bottom: 11px;
+  left: 19px;
+  font-size: 17px;
+}
+.bottom-right {
+  position: absolute;
+  font-weight: bold;
+  bottom: 11px;
+  right: 19px;
+}
+.top-right {
+  position: absolute;
+  font-weight: bold;
+  top: 11px;
+  right: 19px;
+}
+.like-button-grey{
+    border-radius: 80%;
+    background-color: transparent;
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    color: grey;
+    cursor:pointer;
+}
+.like-button-pink{
+    border-radius: 80%;
+    background-color: transparent;
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    color: palevioletred;
+    cursor:pointer;
+}
+.like-button-pink:focus {
+  outline: none;
+}
+
+.like-button-grey:focus {
+  outline: none;
+}
+
+.card-image:hover {
+    opacity: 0.5;
+}
+
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  font-weight: bold;
+  color: #464646;
+  font-size: 30px;
+  padding: 16px 32px;
+}
